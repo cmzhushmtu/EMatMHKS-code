@@ -2,7 +2,7 @@ function main_for_EMatMHKS
 load('data.mat');
 %select pima data set
 result_for_last2=juleijieguo;
-sub_class_trainA=result_for_last2(4,:);%Each time, please use only one data set¡£
+sub_class_trainA=result_for_last2(4,:);%Each time, please use only one data setÂ¡Â£
 dataset_name=sub_class_trainA(1,1);
 training_set=sub_class_trainA(1,2);
 test_set=sub_class_trainA(1,3);
@@ -51,10 +51,10 @@ test_num=0;
 %get the total number of training and test samples
 for tr_num_row=1:size(training_set{1,1},2)
     training_num=training_num+size(training_set{1,1}(1,tr_num_row).class,1);
-end%ÑµÁ·ÊıÄ¿
+end%no. training
 for te_num_row=1:size(test_set{1,1},2)
     test_num=test_num+size(test_set{1,1}(1,te_num_row).class,1);
-end%no. training
+end%no. test
 class_num=size(training_set{1,1},2);%no. class
 training_set_t=training_set{1,1};
 test_set_t=test_set{1,1};
